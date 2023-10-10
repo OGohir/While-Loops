@@ -1,0 +1,46 @@
+#will ask the user how many courses they have and give the median of the courses
+#Omaima Gohir
+#5/52023
+import math
+
+"""
+ This program will ask the user for their course marks and give them the average
+
+Preconditions:
+variables cannot be a string
+
+Returns:
+the results of the users average mark
+"""
+course_one = input("Enter course 1 mark:")
+#if course_one is not greater than 0, print invalid entry
+while not course_one.isdigit() or float(course_one) < 0: #.isdigit checks if its a number
+    print("Invalid Entry")
+    course_one = input("Enter course 1 mark:")
+print(course_one)
+
+course_two = input("Enter course 2 mark:")
+#if course_two is not greater than 0, print invalid entry
+while not course_two.isdigit() or float(course_two) < 0: #.isdigit checks if its a number
+    print("Invalid Entry")
+    course_two = input("Enter course 2 mark:")
+print(course_two)
+
+course_three = input("Enter course 3 mark:")
+#if course_three is not greater than 0, print invalid entry
+while not course_three.isdigit() or float(course_three) < 0: #.isdigit checks if its a number
+    print("Invalid Entry")
+    course_three = input("Enter course 3 mark:")
+print(course_three)
+
+course_four = input("Enter course 4 mark:")
+#if course_four is not greater than 0, print invalid entry
+while not course_four.isdigit() or float(course_four) < 0: #.isdigit checks if its a number
+    print("Invalid Entry")
+    course_four = input("Enter course 4 mark:")
+print(course_four)
+
+total = int(course_one) + int(course_two) + int(course_three) + int(course_four)
+results = (total / 4)
+
+print("Your mark is:", results) #printing the results
